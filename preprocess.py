@@ -16,7 +16,7 @@ def extract_abstract(path):
                 cleaned_content = re.sub(r'[^a-z\s]', '', abstract_content)
                 tokens = nlp(cleaned_content)
                 
-                if len(tokens) > 100 and len(tokens) < 500:
+                if len(tokens) > 60 and len(tokens) < 350:
                     break
                 else:
                     abstract_content = ""
